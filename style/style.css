@@ -46,6 +46,10 @@ body {
 	font-size: 20px;
 }
 
+ul {
+	padding: 0;
+}
+
 
 li {
 	list-style: none;
@@ -59,6 +63,10 @@ a {
 
 a:hover {
 	color: #000;
+}
+
+dl, dt, dd {
+	margin: 0;
 }
 
 /*HEADER*/
@@ -311,7 +319,9 @@ section.news > ul > li:nth-child(3) {
 .reviews-item p {
 	margin-top: 30px;
 	font-size: 16px;
+	line-height: 24px;
 	text-align: left;
+	color: #a8a8a7;
 }
 
 .reviews-item cite {
@@ -321,3 +331,51 @@ section.news > ul > li:nth-child(3) {
 	font-weight: bold;
 } 
 
+/*FOOTER*/
+
+.main-footer {
+	background: #f3f3f1;
+	margin-top: 100px;
+}
+
+.main-footer li {
+	padding: 0.5rem 0;
+}
+
+.main-footer-wrapper {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 0;
+}
+
+.main-footer-wrapper dl {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 700px;
+}
+
+.social-list-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -30px;
+}
+
+.social-list {
+	display: flex;
+}
+
+.social-list li {
+	padding: 1rem;
+	
+}
+
+.social-list i {
+	color: #654e3d;
+}
+
+.feedback {
+	padding: 1rem 2rem;
+	background: #e0c68b;
+}
