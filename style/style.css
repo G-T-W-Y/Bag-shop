@@ -201,3 +201,11 @@ section.new > ul > li:nth-child(3) > article > h3,
 section.new > ul > li:nth-child(3) > article > p {
 	display: none;
 }
+
+/*BRANDS*/
+
+.brands-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
