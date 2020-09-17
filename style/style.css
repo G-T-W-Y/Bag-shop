@@ -60,7 +60,8 @@ a:hover {
 .site-navigation {
 	display: flex;
 	justify-content: space-between;
-	width: 660px;
+	width: 100%;
+	max-width: 660px;
 	margin-right: 160px;
 }
 
@@ -68,7 +69,8 @@ a:hover {
 
 .header {
 	position: relative;
-	margin-bottom: 450px;
+	min-height: 500px;
+	margin-top: -50px;
 }
 
 .header img {
@@ -78,12 +80,13 @@ a:hover {
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: -5;
 }
 
 .header a {
 	display: inline-block;
 	margin-top: 30px;
-	margin-left: 96px;
+	margin-left: 100px;
 	padding: 10px 20px;
 	background: #e0c78c;
 	color: #000; 
@@ -91,12 +94,13 @@ a:hover {
 
 
 p.sales {
-	margin-left: 96px;
+	margin-top: 75px;
+	margin-left: 100px;
 }
 
 p.sales span:nth-child(1) {
 	position: relative;
-	font-size: 90px;
+	font-size: 96px;
 	font-weight: bold;
 	color: #e0c78c;
 }
@@ -120,3 +124,80 @@ p.sales span:nth-child(3) {
 	max-width: 230px;  
 }
 
+/*NEW*/
+
+.new {
+	margin-top: 100px;
+}
+
+.new h2 {
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #e0c78b;
+}
+
+.new p {
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+.new-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.new-item,
+.new-item article {
+	display: flex;
+	flex-direction: column;
+}
+
+.new-item h3,
+.new-item p,
+.new-item a,
+.new-item button {
+	width: 100%;
+	max-width: 160px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.new-item h3 {
+	flex: 1;
+	order: 2;
+	
+}
+
+.new-item img {
+	order: 1;
+}
+
+.new-item p {
+	order: 3;
+	line-height: 30px;
+}
+
+.new-item a {
+	color: #000;
+	font-weight: bold;
+}
+
+.new-item button {
+	border: none;
+	background: transparent;
+	color: #e0c78b;
+	padding: 0;
+	font-size: 16px;
+	cursor: pointer;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+section.new > ul > li:nth-child(3) > article > h3,
+section.new > ul > li:nth-child(3) > article > p {
+	display: none;
+}
